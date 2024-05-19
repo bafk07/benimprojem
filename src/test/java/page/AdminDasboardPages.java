@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import javax.xml.xpath.XPath;
+
 import static utilities.Driver.getDriver;
 
 public class AdminDasboardPages{
@@ -63,6 +65,19 @@ public class AdminDasboardPages{
         @FindBy(xpath = "//*[@id='tableWithSearch']")
         public  WebElement tabloUsers1;
 
+        @FindBy(xpath = "//input[@id='search-table']")
+        public WebElement butonSearch;
+
+
+        @FindBy(xpath="(//*[text()='Bed managers'])[1]")
+        public WebElement menuBedManagers;
+
+        @FindBy(xpath ="(//*[text()='Bed managers'])[2]")
+        public WebElement altMenuBedManagers;
+
+
+        @FindBy(xpath = "//*[text()='Create Bed managers']")
+        public  WebElement altMenuCreateBedManagers;
 
 
 
@@ -76,7 +91,19 @@ public class AdminDasboardPages{
 
 
 
-    }
+
+
+
+
+
+
+
+
+        @Override
+        protected void finalize() throws Throwable {
+                super.finalize();
+        }
+}
 
 
 

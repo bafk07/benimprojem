@@ -17,7 +17,7 @@ public class US021_TC005 {
 
         userHomePage userHomePages=new userHomePage();
 
-        userHomePages.SıgnInButton.click();
+        userHomePages.signInButton.click();
 
 
         userHomePages.TextBoxEmail.sendKeys("avatarmavi@hotmail.com");
@@ -31,6 +31,9 @@ public class US021_TC005 {
 
         WebElement userNameButton = Driver.getDriver().findElement(By.xpath("//*[text()=' avatar mavi']"));
         Assert.assertTrue(userNameButton.isDisplayed());
+
+
+        Driver.closeDriver();
 
 
 

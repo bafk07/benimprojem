@@ -18,7 +18,7 @@ public class userHomePage {
 
 
     @FindBy(xpath = "(//*[@class='btn_add'])[1]") //Homepage>Sıgn In Button
-    public WebElement SıgnInButton;
+    public WebElement signInButton;
 
     @FindBy(xpath = "//*[@name='email']")  //Homepage>Sıgn In>Email Adres Text Box
     public WebElement TextBoxEmail;
